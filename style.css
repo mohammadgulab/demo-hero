@@ -222,13 +222,24 @@ section{position:relative}
  .as-meter{grid-column:1;grid-row:3;justify-self:stretch;text-align:center;margin:0}
  .as-meter b{font-size:2.6rem;margin:2px 0}
  .as-bgword{font-size:34vw;writing-mode:vertical-rl;transform:translate(-50%,-50%)}
+ .statement{padding:64px 18px}
+ .systems,.series,.lab{padding:72px 0}
+ .sec-head{margin-bottom:34px}
+ .series-row{gap:12px}
+ .unit-art{height:340px}
+ .unit-txt{padding:18px 16px 22px}
+ .unit-txt h3{font-size:2rem}
+}
+@media (max-width:640px){
  .series-row{grid-template-columns:1fr;max-width:460px;margin:auto}
  .unit-art{height:380px}
  .steps{grid-template-columns:1fr}
- .steps li{border-right:0;padding-left:0;border-bottom:1px solid var(--line);padding-bottom:26px}
- .steps li::before{left:0}
+ .steps li{border-right:0!important;padding-left:0!important;border-bottom:1px solid var(--line);padding-bottom:26px}
+ .steps li::before{left:0!important}
 }
 @media (max-width:560px){
+ .sec-head h2 br{display:none}
+ .hide-s{display:none}
  .cards{grid-template-columns:1fr}
  .hero h1{font-size:clamp(3.2rem,17vw,5rem)}
  .lede{font-size:.95rem}
